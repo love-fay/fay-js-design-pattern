@@ -15,9 +15,7 @@ class Demo extends React.Component{
 
     iconButtons = [
         {
-            toggleTypes: [
-                'code', 'code'
-            ],
+            type: 'code',
             onClick: () => {
                 this.changeDrawerOpen();
             }
@@ -38,13 +36,9 @@ class Demo extends React.Component{
     };
 
     render(){
-        console.log(this.props.code);
         return (
-            <div>
-                <div style={{width: '500px'}}>
-                    <Card content={this.props.content} iconButtons={this.iconButtons} drawer={{open: this.state.drawerOpen, content: this.props.code}}/>
-                </div>
-                <br/>
+            <div style={{width: '500px', ...this.props.style}} className={this.props.className}>
+                <Card style={{height: '300'}} content={this.props.content} iconButtons={this.iconButtons} drawer={{open: this.state.drawerOpen, content: this.props.code}}/>
             </div>
         )
     }

@@ -3,6 +3,8 @@ import {withRouter} from 'react-router-dom';
 import Common from './common';
 import Home from '../home';
 import Polymorphic from '../example/polymorphic';
+import Encapsulation from '../example/encapsulation';
+import PrototypeExtends from '../example/prototype-extends';
 import Drawer from '../drawer';
 import './style/index.scss';
 
@@ -14,6 +16,8 @@ class Root extends React.Component{
         const pathPrefix = pathname.split('/')[1];
         const router = {
             'polymorphic': <Drawer><Polymorphic/></Drawer>,
+            'encapsulation': <Drawer><Encapsulation/></Drawer>,
+            'prototype-extends': <Drawer><PrototypeExtends/></Drawer>,
             'comingSoon': <Drawer>敬请期待</Drawer>,
             '': <Drawer><Home/></Drawer>,
         };

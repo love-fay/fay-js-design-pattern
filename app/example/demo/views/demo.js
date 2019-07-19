@@ -19,14 +19,18 @@ class Demo extends React.Component{
     loopDemos = () => {
         const {demos} = this.props;
         return demos.map((item, i) => {
-            const {component, code, path} = item;
-            const codeMd = `
-                \`\`\`js
-                ${code}
-                \`\`\`
-            `;
+            const {component, code, path, style, className} = item;
             return {
-                cell: <Card content={this.content(component)} code={<div style={{width: '100%', height: '100%', overflow: 'auto'}}><Markdown md={code}/></div>} path={path}/>
+                cell: <Card content={this.content(component)}
+                            code={
+                                <div style={{width: '100%', height: '100%', overflow: 'auto'}}>
+                                    <Markdown md={code}/>
+                                </div>
+                            }
+                            style={style}
+                            className={className}
+                            path={path}/>,
+                span: 12
             }
         })
     };

@@ -9,6 +9,8 @@ class Drawer extends React.Component{
             subheader: 'components',
             sublist: [
                 {graphic: 'polymorphic', text: 'Polymorphic 多态', href: '/polymorphic'},
+                {graphic: 'encapsulation', text: 'Encapsulation 封装', href: '/encapsulation'},
+                {graphic: 'prototype-extends', text: 'proto_extends 原型继承', href: '/prototype-extends'},
             ],
         }
 

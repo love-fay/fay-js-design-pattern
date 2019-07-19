@@ -9,9 +9,9 @@ export default () => {
     const [sound, setSound] = useState('waiting for animal sound');
 
     const duck = {
-      makeSound: function () {
-          setSound('Ga Ga Ga...');
-      }
+        makeSound: function () {
+            setSound('Ga Ga Ga...');
+        }
     };
 
     const chicken = {
