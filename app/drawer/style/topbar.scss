@@ -1,0 +1,21 @@
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+.frm-drawer-modal {
+  display: flex;
+  height: 100vh;
+  .mdc-drawer-app-content{
+    flex: auto;
+    overflow: auto;
+  }
+  .frm-main-content {
+    overflow: auto;
+    height: 100%;
+  }
+
+  .frm-app-bar {
+    position: absolute;
+  }
+}
+

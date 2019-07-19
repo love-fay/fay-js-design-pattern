@@ -1,0 +1,30 @@
+{
+  "name": "fay-js-design-pattern",
+  "version": "0.0.1",
+  "description": "fay design pattern",
+  "main": "root/index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --config node_modules/@fay-react/tool/config/webpack/default/webpack.config.js --color --progress",
+    "build": "node_modules/.bin/webpack-cli --config node_modules/@fay-react/tool/config/webpack/default/webpack.pro.config.js --color --progress"
+  },
+  "private": false,
+  "author": "fay",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.0.0-rc.2",
+    "@fay-react/tool": "0.0.1-alpha.4",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "@fay-react/lib": "0.0.1-alpha.1",
+    "@fay-react/material": "0.0.1-alpha.3",
+    "classnames": "^2.2.6",
+    "history": "^4.7.2",
+    "prop-types": "^15.6.1",
+    "react-contenteditable": "^3.2.6",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1"
+  }
+}
