@@ -15,7 +15,7 @@
     "@fay-react/tool": "0.0.1-alpha.4",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "webpack-dev-server": "^3.1.5"
+    "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
     "@fay-react/lib": "0.0.1-alpha.1",
