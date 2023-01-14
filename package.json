@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "7.0.0-rc.2",
-    "@fay-react/tool": "0.0.1-alpha.4",
+    "@fay-react/tool": "0.0.1-alpha.41",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "webpack-dev-server": "^3.7.2"
